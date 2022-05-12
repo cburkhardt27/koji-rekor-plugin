@@ -107,7 +107,7 @@ def upload_to_rekor_log(cbtype, *args, **kws):
     if not config:
         config = koji.read_config_files([(CONFIG_FILE, True)])
     public_key = config.get('config', 'public_key_path')
-    rekor_url = config.get('config', 'rekor_server_url')
+    rekor_url = config.get('config', 'rekor_server_url') + "/api/v1/log/entries"
     enforce_upload = config.get('config', 'enforce_rekor_upload')
     record_info = config.get('config', 'record_log_info')
     # Check that the RPM is both built and signed    
