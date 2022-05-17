@@ -39,7 +39,7 @@ There are four options in the configuration file.
 
 # Detailed Usage
 
-The following detailed instructions are for manually signing RPMS and uploading them to Koji and Rekor using the plugin. The plugin should also work for automated signing systems, such as Sigul. It triggers upon the callback `PostRPMSign`, which is called whenever a signature header is uploaded to Koji. The corresponding CLI command is `koji import-sig`, which ultimately calls the function `add-rpm-sig` [where the callback occurs](https://github.com/koji-project/koji/blob/d0507c4d2d2269daa984db642e3bd957dff18948/hub/kojihub.py#L7628).
+The following detailed instructions are for manually signing RPMs and uploading them to Koji and Rekor using the plugin. The plugin should also work for automated signing systems, such as Sigul. It triggers upon the callback `PostRPMSign`, which is called whenever a signature header is uploaded to Koji. The corresponding CLI command is `koji import-sig`, which ultimately calls the function `add-rpm-sig` [where the callback occurs](https://github.com/koji-project/koji/blob/d0507c4d2d2269daa984db642e3bd957dff18948/hub/kojihub.py#L7628).
 These steps are also outlined in a [demo](https://drive.google.com/file/d/1W-g0dlfXp1kM-MPVtu7sJHn1WPAKbu8g/view?usp=sharing).
 
 
