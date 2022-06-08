@@ -29,6 +29,7 @@ systemctl restart httpd.service
 
 # Configuration Options
 There are three options in the configuration file.
+
 **public_key_path**: The plugin needs to be able to access the public key corresponding with the RPM's signature. Export the public key using `gpg --export --armor <Name>` and save the file in a path that is accessible to the Hub; the default is `/usr/share/koji-hub/public-keys`.
 
 **rekor_server_url**: Default server url is the public instance of Rekor: rekor.sigstore.dev. This can be changed to point entries to other Rekor servers.
